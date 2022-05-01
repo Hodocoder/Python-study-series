@@ -1,0 +1,17 @@
+print('Hey, I am DCBbot!! ask your questions, Type in lower case without space and type quit to stop')
+while True:
+    x=input();x=x.lower()
+    if x=='quit':print('goodbye');break
+    y=x.split()
+    if len(y)==0:  print('please ask something')
+    elif   x[-1]=='?': print('Why do you ask that')
+    elif   'hello' in y:  print('Hey,How can I help you?')
+    elif    'courses' in y:  print('MSc. Computational Biology with specialization in three subjects(Machine learning, Computer Aided Drug Design, NGS Data Analytics)')
+    elif   'fees' in y:  print('800 per semester')
+    elif   'entrance date' in y:  print('Yet to be announced( expected in between may 30 and june 5)')
+    elif   'qualification'in y:  print('Machine learning: \nBachelors in Computer Science, Electronics, Mathematics, Physics, Physics with computer application, Physics with machine learning, BCA, B.VOC Software Development, Bioinformatics, Statistics, BTech in any branch including Biotechnology & Bioinformatics\nComputer Aided Drug Design: \nBachelors in Bioinformatics, Biochemistry, Chemistry, Polymer Chemistry, Micrbiology, Industrial Microbiology, Biochemistry and Industrial Microbiology, Botany and Biotechnology, Biotechnology and allied areas, including BTech(Biotechnology, Bioinformatics, Biochemical Engineering) \nNGS Data Analytics:\nBachelors in Bioinformatics, Computer Science, Physics and Computer Applications, Biochemistry, Chemistry, Microbiology, Botany and Biotechnology and allied areas, BTech(Biotechnology, Bioinformatics, Biochemical Engineering)')
+    elif   'features'in y:  print('10 day student induction program, Project Management system, External mentoring')
+    elif   'corevalues'in y:  print('Creativity \nCritical Thinking\nGreen Thinking\nContinuous Personal and Professional Development\nEqual Opportunity\nHappiness ')
+    elif   'moredetails'in y:  print('For dept. Brochure, syllabus & admission counselling\nMail: name@gmail.com\nWhatsapp: 9#######4') 
+    elif   'thankyou' in y:  print('Welcome to our department')
+    else: print('Go on')
